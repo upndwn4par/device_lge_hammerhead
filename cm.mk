@@ -26,3 +26,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Enable Torch
 PRODUCT_PACKAGES += Torch
+
+# Inherit vendor makefiles
+$(call inherit-product, vendor/upndwn4par/config/common.mk)
+$(call inherit-product, vendor/upndwn4par/config/hammerhead.mk)
